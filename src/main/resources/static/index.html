@@ -1,0 +1,14 @@
+<html>
+<header>
+  <title>Webhook Mocker</title>
+</header>
+<body>
+<h1>Webhook mocker</h1>
+<h2>Post payload</h2>
+curl -X POST https://webhook-mocker.herokuapp.com/webhook -H 'Content-Type: application/json' -d '{"key": {"innerKey": "aValue"}}'
+<h2>Get payloads</h2>
+curl -X GET https://webhook-mocker.herokuapp.com/webhook | jq
+<h2>Delete payloads</h2>
+curl -X DELETE https://webhook-mocker.herokuapp.com/webhook
+</body>
+</html>
