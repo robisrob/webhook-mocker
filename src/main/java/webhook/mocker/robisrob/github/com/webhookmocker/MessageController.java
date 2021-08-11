@@ -18,7 +18,6 @@ public class MessageController {
 
   private List<Object> payloads = synchronizedList(new ArrayList<>());
 
-
   @GetMapping
   public List<Object> getPayloads() {
     return payloads;
